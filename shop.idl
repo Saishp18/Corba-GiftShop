@@ -1,0 +1,18 @@
+module GiftShop{
+  struct Gift{
+    string name;
+    long count;
+    long price;
+  };
+  
+  struct Products{
+    Gift gifts[10];
+  };
+
+  interface giftintf{
+      string check_gift(in string gift_id);
+      string process_gift(in string gift_id, in long quantity);
+      long total_price();
+      string pay_bill();
+      };
+};

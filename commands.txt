@@ -1,0 +1,18 @@
+idlj -fAll -oldImplBase shop.idl
+
+6. Compile all files using the command:
+
+	javac *.java 
+
+7. Start ordb from terminal using command:
+
+orbd -ORBInitialPort 1050
+
+8. Start Server using the command:
+
+java Server -ORBInitialPort 1050 -ORBInitialHost localhost
+
+10. Start Client using the command:
+
+java Client -ORBInitialPort 1050 -ORBInitialHost localhost
+
